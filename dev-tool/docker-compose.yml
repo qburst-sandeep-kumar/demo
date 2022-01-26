@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: 'fdroot'
+      POSTGRES_PASSWORD: 'fdroot'
+    ports:
+      - '5432:5432'
+    volumes:
+      - ../flyway_scripts/sql:/docker-entrypoint-initdb.d
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: sandeepkumar@qburst.com
+      PGADMIN_DEFAULT_PASSWORD: fdroot

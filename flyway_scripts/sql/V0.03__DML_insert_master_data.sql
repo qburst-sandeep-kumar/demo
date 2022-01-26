@@ -1,0 +1,27 @@
+
+INSERT INTO filmdb.m_genre (genre_id, genre_type, updated_datetime) VALUES
+('1','Action', CURRENT_TIMESTAMP),
+('2','Adventure', CURRENT_TIMESTAMP),
+('3','Comedy', CURRENT_TIMESTAMP),
+('4','Crime', CURRENT_TIMESTAMP),
+('5','Drama', CURRENT_TIMESTAMP),
+('6','Fantasy', CURRENT_TIMESTAMP),
+('7','Historical', CURRENT_TIMESTAMP),
+('8','Historical fiction', CURRENT_TIMESTAMP),
+('9','Horror', CURRENT_TIMESTAMP),
+('10','Magical realism', CURRENT_TIMESTAMP),
+('11','Mystery', CURRENT_TIMESTAMP),
+('12','Paranoid fiction', CURRENT_TIMESTAMP),
+('13','Philosophical', CURRENT_TIMESTAMP),
+('14','Political', CURRENT_TIMESTAMP),
+('15','Romance', CURRENT_TIMESTAMP),
+('16','Saga', CURRENT_TIMESTAMP),
+('17','Satire', CURRENT_TIMESTAMP),
+('18','Science fiction', CURRENT_TIMESTAMP),
+('19','Social', CURRENT_TIMESTAMP),
+('20','Speculative', CURRENT_TIMESTAMP),
+('21','Thriller', CURRENT_TIMESTAMP),
+('22','Urban', CURRENT_TIMESTAMP),
+('23','Western', CURRENT_TIMESTAMP),
+('24','Animation', CURRENT_TIMESTAMP);
+
