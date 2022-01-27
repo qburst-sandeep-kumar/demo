@@ -15,4 +15,9 @@ public class GenreDto {
      */
     String genreType;
 
+    /**
+     * Updated date time.
+     */
+    String updatedDateTime;
+
 }
