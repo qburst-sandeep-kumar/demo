@@ -20,6 +20,9 @@ public class GenreDto {
      */
     String updatedDateTime;
 
+    /**
+     * Available flag.
+     */
     Boolean availableFlag;
 
 }
