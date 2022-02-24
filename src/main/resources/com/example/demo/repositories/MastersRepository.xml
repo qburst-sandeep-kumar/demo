@@ -3,9 +3,8 @@
 <mapper namespace="com.example.demo.repositories.MastersRepository">
 
     <select id="getGenreMasters" resultType="com.example.demo.dto.GenreDto">
-        SELECT * FROM filmdb.m_genre WHERE available_flag='true';
+        SELECT * FROM filmdb.m_genre WHERE available_flag='true' ORDER BY genre_type DESC;
     </select>
-
 
 
 </mapper>
