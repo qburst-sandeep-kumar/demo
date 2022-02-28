@@ -5,7 +5,9 @@
     <select id="getGenreMasters" resultType="com.example.demo.dto.GenreDto">
         SELECT * FROM filmdb.m_genre WHERE available_flag='true' ORDER BY genre_type DESC;
     </select>
-
+    <insert id="insertGenre" parameterType="com.example.demo.dto.GenreDto">
+        INSERT INTO filmdb.m_genre (genre_id, genre_type,available_flag,updated_datetime) VALUES(#{genreId},#{genreType},#{availableFlag},#{ updatedDateTime});
+    </insert>
 
 </mapper>
 
