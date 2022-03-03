@@ -20,8 +20,8 @@ public class MastersController {
         return mastersService.getGenreMasters();
     }
     @PostMapping("insertGenre")
-    public String insert(@RequestBody GenreDto genreDto){
-        return mastersService.insert(genreDto);
+    public int insertGenre(@RequestBody GenreDto genreDto){
+        return mastersService.insertNewGenre(genreDto);
     }
 
 

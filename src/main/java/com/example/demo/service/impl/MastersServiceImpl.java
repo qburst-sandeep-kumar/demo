@@ -23,12 +23,11 @@ public class MastersServiceImpl implements MastersService {
     public List<GenreDto> getGenreMasters() {
         return mastersRepository.getGenreMasters();
     }
-    public String insert(GenreDto genreDto){
-        genreDto.setAvailableFlag(true);
+    public int insertNewGenre(GenreDto genreDto){
         if (mastersRepository.insertGenre(genreDto)==1)
-            return "inserted successfully";
+            return genreDto.getGenreId();
         else
-            return "failed";
+            return genreDto.getGenreId();
     }
 
 
