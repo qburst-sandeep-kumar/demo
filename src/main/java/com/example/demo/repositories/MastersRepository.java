@@ -14,7 +14,7 @@ public interface MastersRepository {
      * @return
      */
     public List<GenreDto> getGenreMasters();
-
+    public int insertGenre(GenreDto GDto);
 
 
 

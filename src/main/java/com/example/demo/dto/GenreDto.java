@@ -2,13 +2,15 @@ package com.example.demo.dto;
 
 import lombok.Data;
 
+import java.sql.Timestamp;
+
 @Data
 public class GenreDto {
 
     /**
      * Genre ID.
      */
-    String genreId;
+    int genreId;
 
     /**
      * Genre type.
@@ -18,7 +20,7 @@ public class GenreDto {
     /**
      * Updated date time.
      */
-    String updatedDateTime;
+    Timestamp updatedDateTime;
 
     /**
      * Available flag.

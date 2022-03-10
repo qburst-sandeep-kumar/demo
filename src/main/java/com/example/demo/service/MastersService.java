@@ -13,6 +13,10 @@ public interface MastersService {
      * @return
      */
     public List<GenreDto> getGenreMasters();
-
+    /**
+     * Insert new values.
+     * @return
+     */
+    int insertNewGenre(GenreDto genreDto);
 
 }
